@@ -1,4 +1,18 @@
 import express, { Request, Response } from 'express'
+
+// เพิ่มการประกาศ interface Event
+interface Event {
+    id: number;
+    category: string;
+    title: string;
+    description: string;
+    location: string;
+    date: string;
+    time: string;
+    petsAllowed: boolean;
+    organizer: string;
+  }
+
 const app = express()
 const port = 3000
 
@@ -16,4 +30,3 @@ app.get('/test', (req: Request, res: Response) => {
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`)
 })
-//ส่ง request ไปที่ http://localhost:3000/test?id=123 จะได้ผลลัพธ์เป็น id: 123
