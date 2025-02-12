@@ -1,5 +1,6 @@
 //Task3
-const add = (a,b) => {
+const add = (a :number ,b:number) => {
     return a + b;
 }
-console.log(add(1,2)); //Parameter a and b have any type
+const result = add(1,2) + 0;
+console.log(result, 'type of result:', typeof result);//3 type of result: number
