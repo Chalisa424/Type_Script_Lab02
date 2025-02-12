@@ -8,9 +8,19 @@ app.get('/', (req: Request, res: Response) => {
 
 // เพิ่มการเรียกใช้ mapping URL /test
 app.get('/test', (req: Request, res: Response) => {
-  res.send('Hello World! 3')
-})
+    let returnObj = {
+      name: 'test',
+      age: 20,
+      address: 'Thai'
+    }
+    res.json(returnObj)
+  })
 
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`)
-})//แสดงผลลัพธ์ในAPI DOG คือ Hello World! 3
+})
+//{
+//     "name": "test",
+//     "age": 20,
+//     "address": "Thai"
+// }
