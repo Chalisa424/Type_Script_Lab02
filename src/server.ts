@@ -69,7 +69,6 @@ interface Event {
       petsAllowed: false,
       organizer: "Sports Club",
     },
-        //สร้าง object เพิ่มเข้าไปใน events
     {
       id: 6,
       category: "Theater",
@@ -84,7 +83,7 @@ interface Event {
     ];
 
 const app = express()
-const port = 3000
+const port = 3001
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
@@ -104,4 +103,4 @@ app.get('/events', (req: Request, res: Response) => {
 
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`)
-})
+})//http://localhost:3001/events
