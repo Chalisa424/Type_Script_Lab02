@@ -69,6 +69,18 @@ interface Event {
       petsAllowed: false,
       organizer: "Sports Club",
     },
+        //สร้าง object เพิ่มเข้าไปใน events
+    {
+      id: 6,
+      category: "Theater",
+      title: "Play",
+      description: "A live theater play",
+      location: "Tokyo",
+      date: "2021-12-01",
+      time: "18:00",
+      petsAllowed: false,
+      organizer: "Theater Group",
+    }
     ];
 
 const app = express()
