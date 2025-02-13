@@ -97,6 +97,11 @@ app.get('/test', (req: Request, res: Response) => {
     res.send(output);
   })
 
+// เพิ่ม endpoint /events เพื่อคืนค่า event ทั้งหมด
+app.get('/events', (req: Request, res: Response) => {
+  res.json(events);
+})
+
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`)
 })
